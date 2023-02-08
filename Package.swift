@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PHI",
-            url: "https://fileserver.test.glasseson.com/PHI.xcframework.zip",
-            checksum: "2268025e8c2c8613f9713bdd3132ba89c394fcc12ce95f3d164181f44bd14c9c"
+            url: "https://glasseson.jfrog.io/artifactory/luna-dataservices-sdk-ios-local/",
+            checksum: "da13fbb47192b955e8b00ab2611f38845a42ef77145e01cbef0735960f53857a"
         )
     ]
 )
