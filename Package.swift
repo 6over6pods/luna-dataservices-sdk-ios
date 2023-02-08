@@ -28,10 +28,10 @@ let package = Package(
         .target(
             name: "PHIWrapper",
             dependencies: [.product(name: "Mixpanel", package: "mixpanel-swift"),
-                           .target(name: "PHI")]
+                           .target(name: "PHISDK")]
         ),
         .binaryTarget(
-            name: "PHI",
+            name: "PHISDK",
             url: "https://glasseson.jfrog.io/artifactory/luna-dataservices-sdk-ios-local/PHISDK.xcframework.zip",
             checksum: "da13fbb47192b955e8b00ab2611f38845a42ef77145e01cbef0735960f53857a"
         )
