@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "PHI",
+    name: "PHISDK",
     defaultLocalization: "en-US",
     platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PHI",
+            name: "PHISDK",
             targets: ["PHIWrapper"]
         )
     ],
