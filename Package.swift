@@ -4,14 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "PHITestPackage",
+    name: "PHISDK",
     defaultLocalization: "en-US",
     platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PHITestPackage",
-            targets: ["PHITestPackage"]),
+            name: "PHISDK",
+            targets: ["PHIWrapper"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,13 +26,14 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "PHITestPackage",
+            name: "PHIWrapper",
             dependencies: [.product(name: "Mixpanel", package: "mixpanel-swift"),
-                           .target(name: "PHI")]
+                           .target(name: "PHISDK")]
         ),
         .binaryTarget(
-            name: "PHI",
-            url: "https://fileserver.test.glasseson.com/PHILunaSDK.xcframework.zip",
-            checksum: "2268025e8c2c8613f9713bdd3132ba89c394fcc12ce95f3d164181f44bd14c9c")
+            name: "PHISDK",
+            url: "https://glasseson.jfrog.io/artifactory/luna-dataservices-sdk-ios-local/PHISDK.xcframework.zip",
+            checksum: "da13fbb47192b955e8b00ab2611f38845a42ef77145e01cbef0735960f53857a"
+        )
     ]
 )
