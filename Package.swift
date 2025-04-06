@@ -27,8 +27,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PHISDK",
-            url: "https://glasseson.jfrog.io/artifactory/luna-dataservices-sdk-ios-local/8.6.1-157/PHISDK.xcframework.zip",
-            checksum: "8aa6a7e27d1f7a346f62d15656b25e4f1ee74438cc04cfa0849759262f295a07"
+            url: "https://glasseson.jfrog.io/artifactory/luna-dataservices-sdk-ios-local/8.6.1-190-193-195-197-199-201-203-205-207-209-211-213-215-217-220-221/PHISDK.xcframework.zip",
+            checksum: "fd59c645643176f5cc14e2b089de273f02bb6825e2adac3fbc0b690520473a5d"
         )
     ]
 )
